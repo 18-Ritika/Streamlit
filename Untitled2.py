@@ -25,7 +25,7 @@ y_train=df['Item_Outlet_Sales']
 st.sidebar.header('User Input Features')
 
 def user_input_features():
-    drvr_fatl_col_bmiles=st.sidebar.slider('No. of drivers involved in fatal collision',int(X_train.Item_Weight.min()),int(X_train.Item_Weight.max()),int(X_train.Item_weight.mean()))
+    drvr_fatl_col_bmiles=st.sidebar.slider('No. of drivers involved in fatal collision',int(X_train.Item_Weight.min()),int(X_train.Item_Weight.max()),int(X_train.Item_Weight.mean()))
     perc_fatl_speed=st.sidebar.slider('% of drivers involved in over-speeding',int(X_train.Item_Visibility.min()),int(X_train.Item_Visibility.max()),int(X_train.Item_Visibility.mean()))
     perc_fatl_alcohol=st.sidebar.slider('% of drivers alcohol impaired',int(X_train.Item_MRP.min()),int(X_train.Item_MRP.max()),int(X_train.Item_MRP.mean()))
 
